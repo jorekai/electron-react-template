@@ -24,4 +24,6 @@ This is a minimalistic React-Electron template to support a quick setup without 
 
 ## learn more here
 
-Electron [Documentation](https://www.electronjs.org/docs) React [Documentation](https://reactjs.org/docs/getting-started.html) React Bootstrap [Create React App](https://github.com/facebook/create-react-app)
+- Electron [Documentation](https://www.electronjs.org/docs)
+- React [Documentation](https://reactjs.org/docs/getting-started.html)
+- React Bootstrap [Create React App](https://github.com/facebook/create-react-app)
