@@ -9,7 +9,7 @@ This is a minimalistic React-Electron template to support a quick **setup**
     npm install
     npm run electron
 
-- **components**:
+**components**:
   - `main.js` electrons [entry point](https://www.electronjs.org/docs/tutorial/quick-start#main-and-renderer-processes)
   - `package.json` list of dependencies and start scripts
   - `src/index.js` react application renderer
