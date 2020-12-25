@@ -1,6 +1,19 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require("electron");
-const path = require("path");
+const env = process.env.NODE_ENV || "development";
+
+// If development environment we can use the electron-reloader module
+// kills process and rebuilds on electron changes
+if (env === "development") {
+  try {
+    require("electron-reloader")(module, {
+      debug: true,
+      watchRenderer: false,
+    });
+  } catch (_) {
+    console.log("Error");
+  }
+}
 
 function createWindow() {
   // Create the browser window.
@@ -9,11 +22,10 @@ function createWindow() {
     height: 720,
   });
 
-  // and load the index.html of the app.
+  // and load the react app via request.
+  // Open the DevTools.
   mainWindow.loadURL("http://localhost:3000");
   mainWindow.webContents.openDevTools();
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
